@@ -13,7 +13,7 @@ Em aeroportos o controle de tráfico aéreo é um serviço prestado por controla
 Descrição do Algoritmo
 ---------------------
 
-#Estruturas
+##Estruturas
 
 ###Aviao:
 Cada aviao possui um identificador para marca-los, assim como possuem um estado para controle a partir de uma máquina de estados. Este estado pode ser um entre os seguintes, VOANDO, QUEBRADO, GARAGEM, DECOLANDO, POUSANDO, ABASTECENDO, DESEMBARQUE, EMBARQUE e POUSO_FORCADO. Dentre estes o estado QUEBRADO não possui implementação por questões de tempo e por não ter sido especificado sua necessidade.
@@ -24,7 +24,7 @@ Este tipo de dado conta também com uma função init para inicializar os dados 
 Cada aeroporto por sua vez possui um mutex para pista, pois foi-se especificado que só existiria uma pista, um semáforo para portões, inicializado com 20, assim como uma para equipes terrestres, inicializado com 10. Por fim foi-se necessário um marcador para pousos emergênciais e um para pousos normais assim como suas variáveis de condição para garantir a espera de outras aeronaves.
 Este tipo de dado assim como o anterior conta com duas funções, init e destroy.
 
-#Implementação
+##Implementação
 
 ###main:
 Serve apenas para chamar a inicialização dos objetos e criar as threads iniciais dos aviões.
